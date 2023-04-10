@@ -4,51 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/hamburger.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>P-Smide</title>
 </head>
 <body>
     
-    <div class="header">
-        <div class="logo">
-            <a href="index.html">P-Smide</a>
-        </div>
-        <div id="navbar" class="menu">
-            <ul class="menu-list">
-                <li class="menu-text">
-                    <a href="index.html">Hem</a>
-                </li>
-                <li class="menu-text">
-                    <a href="about.html">Om Oss</a>
-                </li>
-                <li class="menu-text">
-                    <a href="contact.html">Kontakt</a>
-                </li>
-            </ul>
-        </div>
-
-        <button class="menu-icon">
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-            </div> 
-        </button>
-
-        <div class="small-menu-container">
-            <ul class="small-menu-list">      
-                <li class="menu-text">
-                    <a href="index.html">Hem</a>
-                </li>
-                <li class="menu-text">
-                    <a href="about.html">Om Oss</a>
-                </li>
-                <li class="menu-text">
-                    <a href="contact.html">Kontakt</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <main-header></main-header>
 
     <div class="banner-container">
         <img src="./img/banner.jpg" alt="">
@@ -56,6 +20,7 @@
             <div class="banner-text">
                 <h1>P-Smide</h1>
                 <p>Kreativt handsmide</p>
+                <p>& Hantverk</p>
             </div>
         </div>
     </div>
@@ -91,7 +56,6 @@
                 <p class="number">#001</p>
                 <p>Katt</p>
                 <p>99 kr</p>
-                <p class="in-stock">( Fåtal i lager )</p>
             </div>
 
             <div id="myModal" class="modal">
@@ -110,7 +74,6 @@
                 <p class="number">#002</p>
                 <p>Ljuslykta</p>
                 <p>99 kr</p>
-                <p class="in-stock">( Pausad för tillfället )</p>
             </div>
 
             <div id="myModal" class="modal">
@@ -129,7 +92,6 @@
                 <p class="number">#003</p>
                 <p>Brevkniv häst</p>
                 <p>99 kr</p>
-                <p class="in-stock">( 2-3v leveranstid )</p>
             </div>
 
             <div id="myModal" class="modal">
@@ -148,7 +110,6 @@
                 <p class="number">#004</p>
                 <p>Kapsylöppnare Orm</p>
                 <p>99 kr</p>
-                <p class="in-stock">( Finns i lager )</p>
             </div>
 
             <div id="myModal" class="modal">
@@ -167,7 +128,6 @@
                 <p class="number">#005</p>
                 <p>Skohorn</p>
                 <p>99 kr</p>
-                <p class="in-stock">( Fåtal i lager )</p>
             </div>
 
             <div id="myModal" class="modal">
@@ -186,7 +146,6 @@
                 <p class="number">#006</p>
                 <p>Ringklocka</p>
                 <p>99 kr</p>
-                <p class="in-stock">( Fåtal i lager )</p>
             </div>
 
             <div id="myModal" class="modal">
@@ -205,7 +164,6 @@
                 <p class="number">#007</p>
                 <p>Grävmaskin</p>
                 <p>99 kr</p>
-                <p class="in-stock">( Fåtal i lager )</p>
             </div>
 
             <div id="myModal" class="modal">
@@ -224,7 +182,6 @@
                 <p class="number">#008</p>
                 <p>Halsband</p>
                 <p>99 kr</p>
-                <p class="in-stock">( Fåtal i lager )</p>
             </div>
 
             <div id="myModal" class="modal">
@@ -237,12 +194,7 @@
     
     <div class="order-box">
         <div class="mail-container">
-            <a class="mail" href="mailto:p-smide@gmail.com
-            ?subject=Beställning
-            &body=Våra Produkter:
-            %0d #002 En Katt (69kr)
-            %0d #003 Brevöppnare (129kr)
-            %0d Skriv vad du vill ha och antal så återkommer vi så snart vi kan">Beställ här</a>
+            <a class="mail" href="mailto:p-smide@gmail.com">Beställ här</a>
         </div>
     </div>
 
@@ -251,17 +203,18 @@
         Efter din beställning återkommer vi så snart vi kan med mer detaljerad info.</p>
     </div>
 
-    <div class="footer">
+    <footer>
         <div class="footer-logo">
             <a href="index.html">P-Smide</a>
         </div>
         <div class="footer-contact">
             <a href="mailto:p-smide@gmail.com">p-smide@gmail.com</a>
         </div>
-    </div>
+    </footer>
 
-    <script type="text/javascript" src="javascript.js"></script>
-    <script type="text/javascript" src="hamburger.js"></script>
+    <script type="text/javascript" src="./components/header.js"></script>
+    <script type="text/javascript" src="./scripts/hamburger.js"></script>
+    <script type="text/javascript" src="./scripts/javascript.js"></script>
 
 </body>
 </html>

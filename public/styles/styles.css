@@ -1,0 +1,392 @@
+
+
+body {
+  text-transform: uppercase;
+  background-color: rgb(241, 238, 238);
+}
+
+header {
+  height: 80px;
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: rgb(221, 214, 214);
+  border-bottom: 1px solid #000000;
+}
+
+.logo {
+  font-size: 30px;
+  letter-spacing: 10px;
+  padding: 25px 100px;
+  
+}
+
+.logo a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-text {
+  padding: 30px 10px;
+  list-style: none;
+  font-size: 20px;
+  
+}
+
+.menu-text a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.banner-container {
+  height: 700px;
+}
+
+.banner-container img {
+  object-fit: cover;
+  height: 700px;
+  width: 100%;
+}
+
+.banner {
+  height: 700px;
+  color: white;
+}
+
+.banner-text {
+  position: absolute;
+  left: 10%;
+  top: 60%;
+  text-shadow: 3px 3px 3px black;
+  max-width: 400px;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 10px;
+}
+
+.banner-text p {
+  letter-spacing: 5px;
+}
+
+.content-container {
+  height: 600px;
+  display: flex;
+  width: 100%;
+  padding: 40px 100px 0;
+}
+
+.content-left {
+  width: 50%;   
+}
+
+.content-text {
+  height: 80%;
+  padding: 0 40px 0 0;
+}
+
+h2 {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+.content-text p {
+  line-height: 1.8;
+}
+
+.content-img {
+  width: 50%;
+}
+
+.content-img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.title {
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+}
+
+h3 {
+  padding: 40px;
+}
+
+.cards-container {
+  /* margin: 0 -5px; */
+  margin-top: 20px;
+    
+}
+
+.cards-container:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+.cards {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+}
+
+.card-img img {
+    object-fit: contain;
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 300px;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 0;
+    height: 130px;
+    line-height: 1.4;
+}
+
+.number {
+  font-weight: bold;
+}
+
+
+  /* Style the Image Used to Trigger the Modal */
+  .myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .myImg:hover {opacity: 0.7;}
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (Image) */
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-height: 80vh;
+    max-width: 80vw;
+  }
+  
+  /* Caption of Modal Image (Image Text) - Same Width as the Image */
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 50px;
+  }
+  
+  /* Add Animation - Zoom in the Modal */
+  .modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .order-box {
+    display: flex;
+    height: 100px;
+    width: 100%;
+  }
+
+  .mail-container {
+    width: 33.33%;
+    height: 40px;
+    width: 330px;
+    background: rgb(221, 214, 214);
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .mail {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 25px;
+    display: block;
+}
+
+.order-info {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 40px;
+  line-height: 1.5;
+}
+
+.order-info p {
+  margin: auto;
+}
+
+footer {
+  height: 100px;
+  display: flex;
+  text-align: center;
+  background-color: rgb(221, 214, 214);
+}
+
+.footer-logo {
+  width: 50%;
+  margin: auto;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  color: #000000;
+  
+}
+
+.footer-contact {
+  width: 50%;
+  margin: auto;
+}
+
+.footer-contact a {
+  color: #000000;
+  text-transform: lowercase;
+}
+
+@media screen and (max-width: 800px) {
+  .logo {
+    letter-spacing: 5px;
+    padding: 25px 30px 25px 100px;
+  }
+
+  .menu-text {
+    padding: 30px 10px;
+    font-size: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .content-container {
+    height: 300px;
+  }
+
+  .content-left {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .content-text {
+    padding: 0;
+  }
+
+  .content-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .logo {
+    padding-left: 40px;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .content-container {
+    padding: 20px 40px;
+  }
+
+  .content-text p {
+    line-height: 1.5;
+  }
+
+  .cards {
+    width: 50%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .order-info p {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+
+  .banner-text {
+    max-width: 300px;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+
+  .banner-text p {
+    letter-spacing: 0px;
+  }
+
+  footer-logo {
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+}
