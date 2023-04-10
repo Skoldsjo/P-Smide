@@ -1,0 +1,83 @@
+.menu-icon {
+    display: none;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+}
+
+.hamburger-lines {
+    height: 30px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #0e2431;
+}
+
+body.is-visible .line1 {
+    transform: rotate(45deg);
+}
+body.is-visible .line2 {
+    transform: scaleY(0);
+}
+body.is-visible .line3 {
+    transform: rotate(-45deg);
+}
+
+.line {
+    transition: all 300ms;
+}
+
+.hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+.hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+.hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.small-menu-container {
+    display: none;
+    font-size: 20px;
+    position: absolute;
+    text-transform: uppercase;
+    right: 0;
+    top: 80px;
+    width: 100%;
+    z-index: 10;
+}
+
+body.is-visible .small-menu-container {
+    display: block;
+}
+
+.small-menu-list {
+    background-color: rgb(241, 238, 238);
+}
+
+.small-menu-list > li {
+    padding: 16px 164.5px 16px 16px;
+    box-sizing: border-box;
+
+    border-bottom: 1px solid #000000;
+
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .menu-icon {
+        display: block;
+    }
+}
